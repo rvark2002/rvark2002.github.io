@@ -45,9 +45,15 @@
 
 ## Java
 
+### Data Structures
+
+### Minecraft Plugins
+
 
 ## Python
 ### Data Science
+
+### Quick Scripts
 
 
 ## About
