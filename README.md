@@ -6,42 +6,14 @@
   <b>Ritvik's Project Depo</b>
 </h1>
 
-<div align="center">
-  
-  <br />
-  <br />
-  <a href="https://github.com/dec0dOS/amazing-github-template/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
-  ·
-  <a href="https://github.com/dec0dOS/amazing-github-template/issues/new?assignees=&labels=enhancement&template=02_FEATURE_REQUEST.md&title=feat%3A+">Request a Feature</a>
-  .
-  <a href="https://github.com/dec0dOS/amazing-github-template/discussions">Ask a Question</a>
-</div>
+
 
 <div align="center">
 <br />
+  
 
 </div>
 
-<details open="open">
-<summary>Table of Contents</summary>
-
-- [About](#about)
-  - [Built With](#built-with)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Usage](#usage)
-    - [Cookiecutter template](#cookiecutter-template)
-    - [Manual setup](#manual-setup)
-    - [Variables reference](#variables-reference)
-- [Roadmap](#roadmap)
-- [Contributing](#contributing)
-- [Support](#support)
-- [License](#license)
-- [Acknowledgements](#acknowledgements)
-
-</details>
-
----
 ## About
 
 <table>
@@ -59,6 +31,21 @@ if you are reading this you have likely read my resume and are interested in som
 </td>
 </tr>
 </table>
+
+
+<details open="open">
+<summary>Table of Contents</summary>
+
+- [About](#about)
+- [Java](#java)
+  - [Data Structures](#data-structures)
+  - [Minecraft Plugins](#minecraft-plugins)
+
+
+</details>
+
+---
+
 
 
 ## Java
@@ -91,6 +78,8 @@ Plugins I developed when I ran a successful Minecraft server that had over 10000
 ### Projects
 
 ## Film Projects
+
+## Tech/Engineering
 
 
 
