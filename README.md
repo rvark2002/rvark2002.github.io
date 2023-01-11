@@ -2,10 +2,11 @@
   <a href="https://github.com/dec0dOS/amazing-github-template">
     <img src="img/mastodon.jpg" alt="Logo" width="250" height="250">
   </a>
+  <b>Ritvik's Project Depo</b>
 </h1>
 
 <div align="center">
-  <b>Ritvik's Project Depo</b>
+  
   <br />
   <br />
   <a href="https://github.com/dec0dOS/amazing-github-template/issues/new?assignees=&labels=bug&template=01_BUG_REPORT.md&title=bug%3A+">Report a Bug</a>
