@@ -48,6 +48,9 @@
 ### Data Structures
 
 ### Minecraft Plugins
+Plugins I developed when I ran a successful Minecraft server that had over 10000 players
+**Note that most of these plugins are Star Wars Related**
+
 
 
 ## Python
