@@ -2,6 +2,7 @@
   <a href="https://github.com/dec0dOS/amazing-github-template">
     <img src="img/mastodon.jpg" alt="Logo" width="250" height="250">
   </a>
+  <br />
   <b>Ritvik's Project Depo</b>
 </h1>
 
