@@ -49,6 +49,7 @@
 
 ### Minecraft Plugins
 Plugins I developed when I ran a successful Minecraft server that had over 10000 players
+<br />
 **Note that most of these plugins are Star Wars Related**
 
 
@@ -103,52 +104,7 @@ Of course, no template will serve all the projects since your needs may be diffe
 </tr>
 </table>
 
-### Built With
 
-- [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
-- [Cookiecutter](https://github.com/cookiecutter/cookiecutter)
-- [GitHub Actions](https://github.com/features/actions)
-- [markdownlint-cli](https://github.com/igorshubovych/markdownlint-cli)
-
-## Getting Started
-
-### Prerequisites
-
-The recommended method to install **Amazing GitHub Template** is by using [Cookiecutter](https://github.com/cookiecutter/cookiecutter). For manual install please refer to [manual setup section](#manual-setup).
-
-The easiest way to install Cookiecutter is by running:
-
-```sh
-pip install --user cookiecutter
-```
-
-For other install options, please refer to [Cookiecutter installation manual](https://cookiecutter.readthedocs.io/en/latest/installation.html).
-
-### Usage
-
-#### Cookiecutter template
-
-After installing Cookiecutter, all you need to do is to run the following command:
-
-```sh
-cookiecutter gh:dec0dOS/amazing-github-template
-```
-
-You will get an interactive prompt where you'll specify relevant options for your project (or the default value will be used).
-
-![Preview](docs/images/preview.svg)
-
-#### Manual setup
-
-Please follow these steps for manual setup:
-
-1. [Download the precompiled template](https://github.com/dec0dOS/amazing-github-template/releases/download/latest/template.zip)
-2. Replace all the [variables](#variables-reference) to your desired values
-3. Initialize the repo in the precompiled template folder
-
-    `or`
-
-    Move the necessary files from precompiled template folder to your existing project directory. Don't forget the `.github` directory that may be hidden by default in your operating system
 
 #### Variables reference
 
