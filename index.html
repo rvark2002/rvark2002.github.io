@@ -3,6 +3,8 @@
         <title>index.html</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<script defer src="https://pyscript.net/latest/pyscript.js"></script>
     </head>
     <body>
         <div id='content'>
@@ -13,6 +15,30 @@
                 <br />
                 <b>Ritvik's Project Depo</b>
             </h1>
+            <div align="center">
+                <h3><i><p id="quote">Insert Inspirational Quote Here</p></i></h3>
+
+
+                <py-script>
+                 import requests
+ 
+                import random
+                import os
+                from js import console
+                url = 'https://raw.githubusercontent.com/...'
+                page = requests.get(url)  
+
+                #file = open('quotes', 'r')
+                #Lines = file.readlines()
+                #line = [random.choice(Lines)]
+                    
+                #Element('quote').element.innerText = line[0]               
+
+                
+                </py-script>
+            
+            </div>
+            
             <div align="center">
                 <br />
 
