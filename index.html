@@ -5,6 +5,8 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
 <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+        
+      
     </head>
     <body>
         <div id='content'>
@@ -20,21 +22,22 @@
 
 
                 <py-script>
-                 import requests
- 
-                import random
-                import os
-                from js import console
-                url = 'https://raw.githubusercontent.com/...'
-                page = requests.get(url)  
+                    import random
+                    url = 'https://raw.githubusercontent.com/rvark2002/rvark2002.github.io/main/quotes.txt'
 
-                #file = open('quotes', 'r')
-                #Lines = file.readlines()
-                #line = [random.choice(Lines)]
-                    
-                #Element('quote').element.innerText = line[0]               
+                    from js import XMLHttpRequest
+                    from js import console
 
-                
+                    req = XMLHttpRequest.new()
+                    req.open("GET", url, False)
+                    req.send(None)
+                    output = str(req.response)
+
+                    Lines = output.splitlines()
+                    line = [random.choice(Lines)]
+                    quote = line[0]
+                    document.getElementById("quote").innerHTML = quote
+
                 </py-script>
             
             </div>
