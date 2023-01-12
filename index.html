@@ -23,10 +23,12 @@
 
                 <py-script>
                     import random
-                    url = 'https://raw.githubusercontent.com/rvark2002/rvark2002.github.io/main/quotes.txt'
-
                     from js import XMLHttpRequest
                     from js import console
+                    import time
+                    url = 'https://raw.githubusercontent.com/rvark2002/rvark2002.github.io/main/quotes.txt'
+
+
 
                     req = XMLHttpRequest.new()
                     req.open("GET", url, False)
@@ -34,9 +36,11 @@
                     output = str(req.response)
 
                     Lines = output.splitlines()
+                    
                     line = [random.choice(Lines)]
                     quote = line[0]
                     js.document.getElementById("quote").innerHTML = quote
+                        
 
                 </py-script>
             
@@ -54,7 +58,7 @@
 
                     Hi,  
 
-                    My name is Ritvik and I am currently a Computer Science student. Some of my hobbies/interests include Paleontology, Cricket, Sci-Fi, Comedy, and Film.
+                    My name is Ritvik and I am currently a Computer Science student with a Minor in Cybersecurity. Some of my hobbies/interests include Paleontology, Cricket, Sci-Fi, Comedy, and Film.
 
                     if you are reading this you have likely read my resume and are interested in some of the projects I have worked on. For obvious reasons I cannot display everything I have worked on, but here are some of my passion/hobby projects I have done. Some projects may just be summaries of the work, while others may be full on code repositories. I hope you enjoy looking through these!
 
@@ -68,6 +72,7 @@
                     <li><a href="#java">Java</a></li>
                     <li><a href="#python">Python</a></li>
                     <li><a href="#javascriptnodejs">JavaScript</a></li>
+                    <li><a href="#cyber">Cybersecurity</a></li>
                     <li><a href="#game">Game Development</a></li>
 
                 </ul>
@@ -257,6 +262,11 @@
                         <td><a href="https://github.com/rvark2002/game-clickers">Game Clickers Script</a></td>
                         <td>Selenium based Python script used to scrape automate processes in html based games</td>
                     </tr>
+                    
+                                        <tr>
+                        <td>Quote Giver</td>
+                        <td>At the top of the page you may have noticed a quote. Whenever you refresh this page, the quote is different! This is because it is running a simple PyScript script that grabs a quote from a text with a 100 inspirational quotes!</td>
+                    </tr>
                 </tbody>
             </table>
             
@@ -282,6 +292,33 @@
                 </tbody>
             </table>
             
+            
+                        
+            <h2 id="cyber">Cybersecurity</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="">MITM</a></td>
+                        <td>Will be updated soon!</td>
+                    </tr>
+                     <tr>
+                        <td><a href="">Spoof</a></td>
+                        <td>Will be updated soon!</td>
+                    </tr>
+                                        <tr>
+                        <td><a href="">Honeypot</a></td>
+                        <td>Will be updated soon!</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
 
 
             
