@@ -1,701 +1,337 @@
-<html>
-    <head>
-        <title>index.html</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
-<script defer src="https://pyscript.net/latest/pyscript.js"></script>
-        
-      
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div id='content'>
-            <h1 align="center">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritvik's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-                <img src="img/mastodon.jpg" alt="Logo" width="250" height="250">
+</head>
 
-                <br />
-                <b>Ritvik's Project Depo</b>
-            </h1>
-            <div align="center">
-                <h3><i><a href="" id="quote">Insert Inspirational Quote Here</a></i></h3>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
 
-
-                <py-script>
-                    import random
-                    from js import XMLHttpRequest
-                    from js import console
-                    import time
-                    url = 'https://raw.githubusercontent.com/rvark2002/rvark2002.github.io/main/quotes.txt'
-
-
-
-                    req = XMLHttpRequest.new()
-                    req.open("GET", url, False)
-                    req.send(None)
-                    output = str(req.response)
-
-                    Lines = output.splitlines()
-                    
-                    line = [random.choice(Lines)]
-                    quote = line[0]
-                    js.document.getElementById("quote").innerHTML = quote
-                        
-
-                </py-script>
-            
-            </div>
-            
-          
-            
-            <div align="center">
-                <br />
-
-
-            </div>
-<!--
-                       
-            <div align="center">
-                <br />
-
-
-            </div>
--->
-<!--
-            
-             <div>
-                 
-                <h1><b><a href="https://github.com/rvark2002/SmartMirror">Click here for Latest Project</a> </b></h1>
-            </div>
--->
-            <h2 id="about">About</h2>
-
-            <tr>
-                <td>
-
-                    Hi,  
-
-                    My name is Ritvik and I am currently a Computer Science student with a Minor in Cybersecurity. Some of my hobbies/interests include Paleontology, Cricket, Sci-Fi, Comedy, and Film.
-
-                    if you are reading this you have likely read my resume and are interested in some of the projects I have worked on. For obvious reasons I cannot display everything I have worked on, but here are some of my passion/hobby projects I have done. Some projects may just be summaries of the work, while others may be full on code repositories. I hope you enjoy looking through these!
-
-                </td>
-            </tr>
-            <hr />          
-            <details open="open"><br />
-                <summary>Table of Contents</summary>
-                <ul>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
-                    <li><a href="#java">Java</a></li>
-                    <li><a href="#python">Python</a></li>
-                    <li><a href="#javascriptnodejs">JavaScript</a></li>
-                    <li><a href="#cyber">Cybersecurity</a></li>
-                    <li><a href="#game">Game Development</a></li>
-                    <li><a href="#techengineering">Tech/Engineering</a></li>
-
+                    <li><a href="#services">Work</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
                 </ul>
-            </details>
-            <hr />
-     
-            <h2 id="java">Java</h2>
-            <h3 id="data-structures">Data Structures/Concepts</h3>
-                        <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/BinaryPatriciaTrie">
-                            BPT</a></td>
-                        <td>Java Project that implements BinaryPatriciaTries</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/AVLGTree">AVL-G Tree</a></td>
-                        <td>Java Project that implements AVL-G Trees</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/ConcurrencyProject">Concurrency</a></td>
-                        <td>Java Project that implements Multi-Threading, Thread-Safe Bounded Queues, Concurrent HashMaps, and Semaphores</td>
-                    </tr>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span>NOTE: I HAVE JUST STARTED UPDATING THIS PORTFOLIO - PLZ BARE WITH IT, IT WILL BE DONE IN A FEW DAYS</span><br></h1>
+                <h1><span>Ritvik's Beautiful Portfolio</span><br></h1>
+                <div class="typewriter"><span class="typewriter-text"></span><label id="typewriter-label"
+                        for="">|</label></div>
 
-                </tbody>
-            </table>
-            
-            
-            <h3 id="minecraft-plugins">Minecraft Plugins</h3>
-            <p>Some of these plugins were developed for my Minecraft Star Wars Server Project called <b>Blockfront II</b><br />
-                
-                <p> Others were just developed for fun</p>
-                <br />
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><b>Blockfront II</b></td>
-                        <td>Star Wars Server which ran most of the plugins below</td>
-                        <td><a href="https://www.youtube.com/watch?v=5JIHRlNj5SU">video</a></td>
-                    </tr>
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/BFLightsabers">Lightsabers</a></td>
-                        <td>Star Wars inspired plugin designed to implement Lightsabers</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/BFForce">Force Powers</a></td>
-                        <td>Star Wars inspired plugin designed to implement the Jedi/Sith Force Abilities</td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/bfhelmets">Star Wars Helmets</a></td>
-                        <td>Star Wars inspired plugin designed to create wearable Helmet/Alien cosmetics</td>
-                    </tr>
-                    
-                                        <tr>
-                        <td><a href="https://github.com/rvark2002/BFLevels">Blockfront Level System</a></td>
-                        <td>A custom Level System created to operate on the Blockfront II server and act as a link between all of the servers plugins</td>
-                    </tr>
-                    
-                                                            <tr>
-                        <td><a href="https://github.com/rvark2002/BFTDM">Heroes vs Villains</a></td>
-                        <td>A fast paced Star Wars themed mini game based off of Battlefront's Heroes vs Villains</td>
-                                                                <td><a href="https://www.youtube.com/watch?v=i7wr1VfwPWc">video</a></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Jetpack</td>
-                        <td>A Jet Pack plugin based off of Star Wars bounty hunters like Boba Fett!</td>
-                                                                <td><a href="https://www.youtube.com/watch?v=YacTRYdnWNc">video</a></td>
-                    </tr>
-                    
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/BFLightsabers">Throwable Lightsabers</a></td>
-                        <td>An add-on to my Lightsaber plugin which makes the Lightsabers able to be thrown!</td>
-                        <td><a href="https://www.youtube.com/watch?v=jW3xEMXtsM4">video</a></td>
-                    </tr>
-                    
-                    <tr>
-                        <td>Bounty Hunter</td>
-                        <td>Star Wars inspired plugin designed to replicate the Bounty Hunter style seen in the popular tv show The Mandalorian</td>
-                      
-                    </tr>
-                                        <tr>
-                        <td>Droids</td>
-                        <td>Star Wars inspired plugin designed to add Droid companions such as R2-D2 or BB-8</td>
-                      
-                    </tr>
-                    
-                    <tr>
-                        <td>Ships</td>
-                        <td>Star Wars inspired plugin designed to add Flyable Ships such as X-Wings or Tie-Fighters</td>
-                      
-                    </tr>
-                    
-
-                    
-                </tbody>
-            </table>
-
-            <h2 id="python">Python</h2>
-
-
-
-
-            <h3 id="data-science">Data Science</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/weather-proj">Natural Disaster Analysis</a></td>
-                        <td>Python Project that performs Data Science Analysis on Natural Disasters</td>
-                    </tr>
-
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/guinea-classifier">Guinea Pig Classifier</a></td>
-                        <td>Machine Learning Script powered by TensorFlow which can identify a Guinea Pig from a variety of other animals</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            
-            <h3 id="aws">Amazon Web Services (AWS)</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Video Moderation</td>
-                        <td>Python Lambda Function which can scrape a video from a url and run Video Moderation on it. Flags content such as Weapons, Drugs, Etc</td>
-                    </tr>
-                                        <tr>
-                        <td>Audio Transcription</td>
-                        <td>Python Lambda Function which can scrape a video from a url and transcribe text from the video. This also supports Spanish</td>
-                    </tr>
-                    
-                                        <tr>
-                        <td>Video OCR</td>
-                        <td>Python Lambda Function which can scrape a video from a url and run through the video collecting any text that appears in it</td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-
-            <h3 id="quick-scripts">Quick Scripts</h3>
-            
-                       
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Gibbon Bot</td>
-                        <td>A ridiculous python based instagram bot, that can follow, comment, message, and post</td>
-                    </tr>
-
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/game-clickers">Game Clickers Script</a></td>
-                        <td>Selenium based Python script used to scrape automate processes in html based games</td>
-                    </tr>
-                    
-                                        <tr>
-                        <td>Quote Giver</td>
-                        <td>At the top of the page you may have noticed a quote. Whenever you refresh this page, the quote is different! This is because it is running a simple PyScript script that grabs a quote from a text with a 100 inspirational quotes!</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            
-
-
-            <h2 id="javascriptnodejs">JavaScript/NodeJS</h2>
-            
-            <h3 id="projects">Projects</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/poke-grab">PokeGrab</a></td>
-                        <td>Pokemon Go inspired NodeJS Project that utilizes Express, MongoDB, HTML/CSS, and PokeAPI</td>
-                    </tr>
-
-                </tbody>
-            </table>
-            
-            
-                        
-            <h2 id="cyber">Cybersecurity</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="">MITM</a></td>
-                        <td>Will be updated soon!</td>
-                    </tr>
-                     <tr>
-                        <td><a href="">Spoof</a></td>
-                        <td>Will be updated soon!</td>
-                    </tr>
-                                        <tr>
-                        <td><a href="">Honeypot</a></td>
-                        <td>Will be updated soon!</td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-
-
-            
-            <h2 id="game">Game Development</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/TapTrack2019">TapTrack2019</a></td>
-                        <td>Track and Field inspired IOS game developed with Unity 3-D</td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-
-            <h2 id="techengineering">Tech/Engineering</h2>
-                        <table>
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><a href="https://github.com/rvark2002/SmartMirror">Smart Mirror</a></td>
-                        <td>A Smart Mirror that displays Weather, News, Quotes, and Google Calendar</td>
-                    </tr>
-
-                </tbody>
-            </table>
-
-
-
+            </div>
         </div>
+    </div>
+    <!-- -----------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hi, My name is Ritvik and if you are reading this, you've likely already seen my resume, so I
+                        will not bore you with a "resume copy/paste" here
+                        <br><br>
+                        One thing my resume does not tell you about me is that I love to just make things. I jump from
+                        project to project all the time - dipping my feet in a lot of different
+                        languages, frameworks, and technologies. I will let my work speak for itself, but I am always
+                        looking to play around with new things and learn more.
+                        <br><br>
+                        I genuinely hope you get atleast a little bit of joy from looking at my projects
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <!-- <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <p><img src="https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&amp;logo=c&amp;logoColor=white"
+                                    alt="C"> <img
+                                    src="https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&amp;logo=csharp&amp;logoColor=white"
+                                    alt="C#"> <img
+                                    src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&amp;logo=openjdk&amp;logoColor=white"
+                                    alt="Java"> <img
+                                    src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&amp;logo=html5&amp;logoColor=white"
+                                    alt="HTML5"> <img
+                                    src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&amp;logo=javascript&amp;logoColor=%23F7DF1E"
+                                    alt="JavaScript"> <img
+                                    src="https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&amp;logo=kotlin&amp;logoColor=white"
+                                    alt="Kotlin"> <img
+                                    src="https://img.shields.io/badge/OCaml-%23E98407.svg?style=for-the-badge&amp;logo=ocaml&amp;logoColor=white"
+                                    alt="OCaml"> <img
+                                    src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54"
+                                    alt="Python"> <img
+                                    src="https://img.shields.io/badge/ruby-%23CC342D.svg?style=for-the-badge&amp;logo=ruby&amp;logoColor=white"
+                                    alt="Ruby"> <img
+                                    src="https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&amp;logo=rust&amp;logoColor=white"
+                                    alt="Rust"> <img
+                                    src="https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&amp;logo=typescript&amp;logoColor=white"
+                                    alt="TypeScript"> <img
+                                    src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&amp;logo=swift&amp;logoColor=white"
+                                    alt="Swift"> <img
+                                    src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&amp;logo=amazon-aws&amp;logoColor=white"
+                                    alt="AWS"> <img
+                                    src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&amp;logo=google-cloud&amp;logoColor=white"
+                                    alt="Google Cloud"> <img
+                                    src="https://img.shields.io/badge/Apache%20Kafka-000?style=for-the-badge&amp;logo=apachekafka"
+                                    alt="Apache Kafka"> <img
+                                    src="https://img.shields.io/badge/bootstrap-%238511FA.svg?style=for-the-badge&amp;logo=bootstrap&amp;logoColor=white"
+                                    alt="Bootstrap"> <img
+                                    src="https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&amp;logo=express&amp;logoColor=%2361DAFB"
+                                    alt="Express.js"> <img
+                                    src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&amp;logo=node.js&amp;logoColor=white"
+                                    alt="NodeJS"> <img
+                                    src="https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB"
+                                    alt="React"> <img
+                                    src="https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&amp;logo=spring&amp;logoColor=white"
+                                    alt="Spring"> <img
+                                    src="https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&amp;logo=jenkins&amp;logoColor=white"
+                                    alt="Jenkins"> <img
+                                    src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&amp;logo=mongodb&amp;logoColor=white"
+                                    alt="MongoDB"> <img
+                                    src="https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&amp;logo=mysql&amp;logoColor=white"
+                                    alt="MySQL"> <img
+                                    src="https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white"
+                                    alt="Postgres"> <img
+                                    src="https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&amp;logo=Matplotlib&amp;logoColor=black"
+                                    alt="Matplotlib"> <img
+                                    src="https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&amp;logo=Keras&amp;logoColor=white"
+                                    alt="Keras"> <img
+                                    src="https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&amp;logo=pandas&amp;logoColor=white"
+                                    alt="Pandas"> <img
+                                    src="https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&amp;logo=numpy&amp;logoColor=white"
+                                    alt="NumPy"> <img
+                                    src="https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&amp;logo=PyTorch&amp;logoColor=white"
+                                    alt="PyTorch"> <img
+                                    src="https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&amp;logo=scikit-learn&amp;logoColor=white"
+                                    alt="scikit-learn"> <img
+                                    src="https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&amp;logo=TensorFlow&amp;logoColor=white"
+                                    alt="TensorFlow"> <img
+                                    src="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&amp;logo=git&amp;logoColor=white"
+                                    alt="Git"> <img
+                                    src="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&amp;logo=github&amp;logoColor=white"
+                                    alt="GitHub"> <img
+                                    src="https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&amp;logo=gitlab&amp;logoColor=white"
+                                    alt="GitLab"> <img
+                                    src="https://img.shields.io/badge/jira-%230A0FFF.svg?style=for-the-badge&amp;logo=jira&amp;logoColor=white"
+                                    alt="Jira"> <img
+                                    src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&amp;logo=postman&amp;logoColor=white"
+                                    alt="Postman"> <img
+                                    src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&amp;logo=Raspberry-Pi"
+                                    alt="Raspberry Pi"> <img
+                                    src="https://img.shields.io/badge/unity-%23000000.svg?style=for-the-badge&amp;logo=unity&amp;logoColor=white"
+                                    alt="Unity"> <img
+                                    src="https://img.shields.io/badge/unrealengine-%23313131.svg?style=for-the-badge&amp;logo=unrealengine&amp;logoColor=white"
+                                    alt="Unreal Engine"></p>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br>UI/UX Design Training at ET Institute</li>
+                            <li><span>2019 - 2021</span><br>Team lead at StarApp LLC.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Cricket</span>
+                            <li>
+                            <li><span>Paleontology</span>
+                            <li>
+                            <li><span>Sci-Fi</span>
+                            <li>
+                            <li><span>Comedy</span>
+                            <li>
+                            <li><span>Film</span>
+                            <li>
+                            <li><span>Hiking</span>
+                            <li></li>
+                            </li>
+                            </li>
+                            </li>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------services---------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Notable Work/Class Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-angle-double-up" aria-hidden="true"></i>
+                    <h2>LQA/LCLA App Modernization</h2>
+                    <p>UPDATING SOON</p>
+                </div>
+                <div>
+<i class="fa fa-video-camera" aria-hidden="true"></i>
+                    <h2>Video/Audio Moderation</h2>
+                    <p>UPDATING SOON</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>XML to JSON Parser</h2>
+                    <p>UPDATING SOON</p>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Weather Analysis Project</h2>
+                    <p>UPDATING SOON</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ----------portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">The Fun Stuff</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Blockfront II</h3>
+                        <p>COMING SOON</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Animal Conservation Portal</h3>
+                        <p>COMING SOON</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Gibbon Bot</h3>
+                        <p>COMING SOON</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Tap Track 2019</h3>
+                        <p>COMING SOON</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Banner Kingdoms</h3>
+                        <p>COMING SOON</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See more</a> -->
+        </div>
+    </div>
+    <!-- ----------contact------------- -->
+    <div id="contact">
+        <div class="container">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Let's Connect !</h1>
+                    <!-- <p><i class="fas fa-phone-square-alt"></i> 0123456789</p> -->
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a> -->
+                        <!-- <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-instagram"></i></a> -->
+                        <a href="mailto:Ritvikv20@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/ritvik-varkhedkar-68aa01223/"><i class="fab fa-linkedin"></i></a>
+                        <a href="images/Varkhedkar_Ritvik_Resume.pdf"><i class="fa fa-file-text" aria-hidden="true"></i></a>
+                    </div>
+                  
+                </div>
+                <!-- <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span> -->
+            </div>
+
+    </div>
+    <div class="copyright">
+        <p>Copyright ©Ritvik Varkhedkar </p>
+    </div>
+    </div>
 
 
-        <style type='text/css'>body {
-            font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-            color: #111;
-            background-color: #fbfbfb;
-            -webkit-text-size-adjust: 100%;
-            -webkit-font-feature-settings: "kern" 1;
-            -moz-font-feature-settings: "kern" 1;
-            -o-font-feature-settings: "kern" 1;
-            font-feature-settings: "kern" 1;
-            font-kerning: normal;
-            padding: 30px;
-            }
 
-            @media only screen and (max-width: 600px) {
-                body {
-                    padding: 5px;
-                }
-                body>#content {
-                    padding: 0px 20px 20px 20px !important;
-                }
-            }
-
-            body>#content {
-                margin: 0px;
-                max-width: 900px;
-                border: 1px solid #e1e4e8;
-                padding: 10px 40px;
-                padding-bottom: 20px;
-                border-radius: 2px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            hr {
-                color: #bbb;
-                background-color: #bbb;
-                height: 1px;
-                flex: 0 1 auto;
-                margin: 1em 0;
-                padding: 0;
-                border: none;
-            }
-
-
-            /**
-            * Links
-            */
-
-            a {
-                color: #0366d6;
-                text-decoration: none;
-            }
-
-            a:visited {
-                color: #0366d6;
-            }
-
-            a:hover {
-                color: #0366d6;
-                text-decoration: underline;
-            }
-
-            pre {
-                background-color: #f6f8fa;
-                border-radius: 3px;
-                font-size: 85%;
-                line-height: 1.45;
-                overflow: auto;
-                padding: 16px;
-            }
-
-
-            /**
-            * Code blocks
-            */
-
-            code {
-                background-color: rgba(27, 31, 35, .05);
-                border-radius: 3px;
-                font-size: 85%;
-                margin: 0;
-                word-wrap: break-word;
-                padding: .2em .4em;
-                font-family: SFMono-Regular, Consolas, Liberation Mono, Menlo, Courier, monospace;
-            }
-
-            pre>code {
-                background-color: transparent;
-                border: 0;
-                display: inline;
-                line-height: inherit;
-                margin: 0;
-                overflow: visible;
-                padding: 0;
-                word-wrap: normal;
-                font-size: 100%;
-            }
-
-
-            /**
-            * Blockquotes
-            */
-
-            blockquote {
-                margin-left: 30px;
-                margin-top: 0px;
-                margin-bottom: 16px;
-                border-left-width: 3px;
-                padding: 0 1em;
-                color: #828282;
-                border-left: 4px solid #e8e8e8;
-                padding-left: 15px;
-                font-size: 18px;
-                letter-spacing: -1px;
-                font-style: italic;
-            }
-
-            blockquote * {
-                font-style: normal !important;
-                letter-spacing: 0;
-                color: #6a737d !important;
-            }
-
-
-            /**
-            * Tables
-            */
-
-            table {
-                border-spacing: 2px;
-                display: block;
-                font-size: 14px;
-                overflow: auto;
-                width: 100%;
-                margin-bottom: 16px;
-                border-spacing: 0;
-                border-collapse: collapse;
-            }
-
-            td {
-                padding: 6px 13px;
-                border: 1px solid #dfe2e5;
-            }
-
-            th {
-                font-weight: 600;
-                padding: 6px 13px;
-                border: 1px solid #dfe2e5;
-            }
-
-            tr {
-                background-color: #fff;
-                border-top: 1px solid #c6cbd1;
-            }
-
-            table tr:nth-child(2n) {
-                background-color: #f6f8fa;
-            }
-
-
-            /**
-            * Others
-            */
-
-            img {
-                max-width: 100%;
-            }
-
-            p {
-                line-height: 24px;
-                font-weight: 400;
-                font-size: 16px;
-                color: #24292e;
-            }
-
-            ul {
-                margin-top: 0;
-            }
-
-            li {
-                color: #24292e;
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 1.5;
-            }
-
-            li+li {
-                margin-top: 0.25em;
-            }
-
-            * {
-                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-                color: #24292e;
-            }
-
-            a:visited {
-                color: #0366d6;
-            }
-
-
-            h2{
-                border-bottom: 1px solid #eaecef;
-                color: #111;
-                /* Darker */
-            }
-
-            code>* {
-                font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace !important;
-            }</style>
-        <style type='text/css'>/*
-
-            Atom One Dark by Daniel Gamage
-            Original One Dark Syntax theme from https://github.com/atom/one-dark-syntax
-
-            base:    #282c34
-            mono-1:  #abb2bf
-            mono-2:  #818896
-            mono-3:  #5c6370
-            hue-1:   #56b6c2
-            hue-2:   #61aeee
-            hue-3:   #c678dd
-            hue-4:   #98c379
-            hue-5:   #e06c75
-            hue-5-2: #be5046
-            hue-6:   #d19a66
-            hue-6-2: #e6c07b
-
-            */
-
-            .hljs {
-                display: block;
-                overflow-x: auto;
-                padding: 0.5em;
-                color: #abb2bf;
-                background: #282c34;
-            }
-
-            .hljs-comment,
-            .hljs-quote {
-                color: #5c6370;
-                font-style: italic;
-            }
-
-            .hljs-doctag,
-            .hljs-keyword,
-            .hljs-formula {
-                color: #c678dd;
-            }
-
-            .hljs-section,
-            .hljs-name,
-            .hljs-selector-tag,
-            .hljs-deletion,
-            .hljs-subst {
-                color: #e06c75;
-            }
-
-            .hljs-literal {
-                color: #56b6c2;
-            }
-
-            .hljs-string,
-            .hljs-regexp,
-            .hljs-addition,
-            .hljs-attribute,
-            .hljs-meta-string {
-                color: #98c379;
-            }
-
-            .hljs-built_in,
-            .hljs-class .hljs-title {
-                color: #e6c07b;
-            }
-
-            .hljs-attr,
-            .hljs-variable,
-            .hljs-template-variable,
-            .hljs-type,
-            .hljs-selector-class,
-            .hljs-selector-attr,
-            .hljs-selector-pseudo,
-            .hljs-number {
-                color: #d19a66;
-            }
-
-            .hljs-symbol,
-            .hljs-bullet,
-            .hljs-link,
-            .hljs-meta,
-            .hljs-selector-id,
-            .hljs-title {
-                color: #61aeee;
-            }
-
-            .hljs-emphasis {
-                font-style: italic;
-            }
-
-            .hljs-strong {
-                font-weight: bold;
-            }
-
-            .hljs-link {
-                text-decoration: underline;
-            }
-        </style>
-            <p id="sudo"></p>
- 
     <script>
-        /* Function to use lastModified property */
-        
-            var x = "Last Updated "+ document.lastModified;
-            document.getElementById("sudo").innerHTML = x;
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
     </script>
-    </body>
-    
+
+    <script>
+
+        var sidemeu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemeu.style.right = "0";
+        }
+        function closemenu() {
+            sidemeu.style.right = "-200px";
+        }
+
+    </script>
+    <script>
+        const scriptURL = '< add you own link here >' // add your own app script link here
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="script.js"></script>
+</body>
 
 </html>
